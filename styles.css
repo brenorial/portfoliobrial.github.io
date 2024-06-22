@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    background-color: #131313;
+    background-color: #000000;
     color: white;
     padding: 2em 0;
     text-align: center;
@@ -66,15 +66,16 @@ header nav ul li a {
 .container {
     display: flex;
     max-width: 960px;
-    margin: 2em auto;
-    padding: 2em;
+    margin-top: 150px;
+    padding: 20em;
     background-color: white;
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .about-me-text {
     flex: 1;
+    margin-top: 1.5em;
 }
 
 .about-me-text h2 {
@@ -82,9 +83,22 @@ header nav ul li a {
     margin-bottom: 1em;
 }
 
+.about-me-text h3 {
+    font-size: 2em;
+    margin-bottom: 0em;
+    font-weight: 100;
+}
+
+.about-me-text h4 {
+    font-size: 2em;
+    margin-bottom: 0em;
+    font-weight: 100;
+}
+
 .about-me-text p {
     font-size: 1.1em;
     line-height: 1.6;
+    margin-bottom: 2em;
 }
 
 .about-me-image {
@@ -97,6 +111,7 @@ header nav ul li a {
     background-repeat: no-repeat; /* Evita repetição da imagem de fundo */
     border-radius: 8px; /* Bordas arredondadas para o container */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    top: 100px;
     height: 400px; /* Altura fixa para a visualização */
     width: 60%; /* Largura reduzida para 60% da largura total */
     max-width: 400px; /* Largura máxima para garantir que não ultrapasse o tamanho desejado */
@@ -107,7 +122,7 @@ header nav ul li a {
 .about-me-image::after {
     content: ''; /* Cria um pseudo-elemento para ajustar o tamanho e posição da sombra */
     position: absolute;
-    top: 0;
+    top: 0px;
     left: 0;
     width: 100%;
     height: 100%;
@@ -119,9 +134,263 @@ header nav ul li a {
     display: none; /* Esconde qualquer imagem dentro de .about-me-image */
 }
 
+/* Estilos para a seção Skills */
+
+.skills {
+    background-color: #001524;
+    padding: 4em 0;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+.skills h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    color: #333;
+}
+
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2em;
+    margin-top: 2px;
+}
+
+.skill {
+    background-color: #fff;
+    padding: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skill h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    color: #333;
+}
+
+.skill p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Estilos adicionais de hover para cada habilidade */
+.skill:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.projects {
+    background-color: #001524;
+    padding: 4em 0;
+    bottom: 0.5em;
+    text-align: center; /* Centraliza o conteúdo dos projetos */
+}
+
+.projects .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 1em;
+    display: grid;
+    grid-template-columns: 1fr; /* Define uma coluna */
+    gap: 2em;
+}
+
+.projects h2 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    color: #333;
+    margin-top: 0.5em;
+    grid-column: 1 / -1;
+}
+
+.project {
+    background-color: #fff;
+    padding: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    position: relative;
+}
+
+.project-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    color: #333;
+}
+
+.project p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 1em;
+}
+
+.project-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 1em;
+}
+
+.project-content img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do balão */
+    height: auto; /* Altura automática para manter a proporção */
+    border-radius: 8px; /* Borda arredondada */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-top: 1em; /* Espaçamento superior */
+    display: block; /* Garante que a imagem seja exibida como um bloco */
+    margin-left: auto; /* Centraliza horizontalmente */
+    margin-right: auto; /* Centraliza horizontalmente */
+}
+.certificates {
+    background-color: #001524;
+    padding: 4em 0;
+    text-align: center;
+    color: #333;
+}
+
+.certificates .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.certificates h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.7em;    
+    color: #333;
+    text-align: center; 
+    border-radius: 10px;
+}
+.certificate {
+    background-color: #fff;
+    padding: 1.5em;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin-bottom: 2em;
+    max-width: 600px; /* Ajuste conforme necessário */
+}
+
+.certificate h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    color: #333;
+    text-align: center; 
+}
+
+.certificate h4 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    color: #333;
+    font-weight: 300;
+    text-align: center; 
+}
+.certificate img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 1em;
+}
+
+.contact {
+    background-color: #001524;
+    padding: 4em 0;
+    color: #333; /* Alterei a cor do texto para branco para melhor contraste */
+    text-align: center; /* Centraliza o texto dentro do container */
+}
+
+.contact .container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 2em;
+    font-weight: bold;
+    text-align: left;
+    writing-mode: vertical-lr; /* Define a escrita vertical da direita para a esquerda */
+    text-orientation: mixed; /* Define a orientação do texto para misturada */
+    margin-left: 20px; /* Ajusta o espaçamento à esquerda */
+    padding-top: 40px; /* Afastamento a partir do início */
+}
+
+.contact-info {
+    margin-top: 2em;
+}
+
+
+.contact-item {
+    display: flex;
+    align-items: center; /* Alinha itens verticalmente no centro */
+    margin-bottom: 1.5em; /* Espaçamento entre os itens */
+}
+
+.contact-item img {
+    width: 40px;
+    height: 40px;
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+.contact h3 {
+    font-size: 1.5em;
+    margin-bottom: 0em; /* Ajusta o espaçamento abaixo do título */
+    margin-left: 0.4;
+}
+
+.contact h4 {
+    font-size: 1.2em;
+    margin-bottom: 0em; /* Ajusta o espaçamento abaixo do texto */
+    font-weight: 300;
+    margin-left: 0.5;
+}
+
+.contact-item p {
+    margin: 0;
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #333; /* Cor do texto dos itens de contato */
+}
+
+.contact-item a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+    color: #333;
+}
+
 
 footer {
-    background-color: #131313;
+    background-color: #000000;
     color: white;
     text-align: center;
     padding: 1em 0;
