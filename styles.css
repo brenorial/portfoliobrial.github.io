@@ -76,29 +76,34 @@ header nav ul li a {
 .about-me-text {
     flex: 1;
     margin-top: 1.5em;
+    text-align: justify;
 }
 
 .about-me-text h2 {
     font-size: 2em;
     margin-bottom: 1em;
+    text-align: justify;
 }
 
 .about-me-text h3 {
     font-size: 2em;
     margin-bottom: 0em;
     font-weight: 100;
+    text-align: justify;
 }
 
 .about-me-text h4 {
     font-size: 2em;
     margin-bottom: 0em;
     font-weight: 100;
+    text-align: justify;
 }
 
 .about-me-text p {
     font-size: 1.1em;
     line-height: 1.6;
     margin-bottom: 2em;
+    text-align: justify;
 }
 
 .about-me-image {
