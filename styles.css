@@ -342,7 +342,7 @@ header nav ul li a {
     writing-mode: vertical-lr; /* Define a escrita vertical da direita para a esquerda */
     text-orientation: mixed; /* Define a orientação do texto para misturada */
     margin-left: 20px; /* Ajusta o espaçamento à esquerda */
-    padding-top: 40px; /* Afastamento a partir do início */
+    padding-top: 60px; /* Afastamento a partir do início */
 }
 
 .contact-info {
@@ -364,16 +364,17 @@ header nav ul li a {
 }
 
 .contact h3 {
-    font-size: 1.5em;
+    font-size: 1.3em;
     margin-bottom: 0em; /* Ajusta o espaçamento abaixo do título */
     margin-left: 0.4;
+    margin-right: 10px;
 }
 
 .contact h4 {
     font-size: 1.2em;
     margin-bottom: 0em; /* Ajusta o espaçamento abaixo do texto */
     font-weight: 300;
-    margin-left: 0.5;
+    margin-left: 1.9;
 }
 
 .contact-item p {
