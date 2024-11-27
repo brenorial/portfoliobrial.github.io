@@ -1,0 +1,22 @@
+# Ignorar pastas
+dev/
+bin/
+cmd/
+etc/
+mingw64/ 
+tmp/
+usr/ 
+.git/
+
+# Ignorar arquivos específicos
+git-bash.exe
+git-cmd.exe 
+LICENSE.txt
+ReleaseNotes.html
+unins000.dat
+unins000.exe
+unins000.msg
+unins000.*
+
+# Ignorar tudo dentro de uma pasta
+temp/*
