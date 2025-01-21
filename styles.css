@@ -376,7 +376,7 @@ header nav ul li a {
 }
 
 .contact-item img:hover {
-    transform: translateY(-10px); /* Faz o ícone "subir" */
+    transform: translateY(-10px); 
 }
 
 .contact-info {
