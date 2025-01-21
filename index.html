@@ -144,7 +144,30 @@
     
         </div>
     </section>
-
+   
+    <button id="scrollToTopBtn" title="Ir para o topo">⬆</button>
+    <script>
+        // Obtém o botão
+        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+    
+        // Quando o usuário rola a página para baixo, mostra o botão
+        window.onscroll = function() {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        };
+    
+        // Quando o botão é clicado, rola suavemente para o topo
+        scrollToTopBtn.onclick = function() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        };
+    </script>
+    
     <section id="certificados" class="certificates">
         <div class="container">
             <h2>Certificados</h2>
@@ -200,24 +223,43 @@
             <h2>Contatos</h2>
     
             <div class="contact-info">
+                <!-- WhatsApp -->
                 <div class="contact-item">
                     <img src="images/wp.png" alt="Ícone WhatsApp">
                     <h3>WhatsApp:</h3>
-                    <h4>(21) 97039-9615</h4>
+                    <a href="https://wa.me/5521970399615" target="_blank">
+                        <h4>(21) 97039-9615</h4>
+                    </a>
                 </div>
-    
+            
+                <!-- LinkedIn -->
                 <div class="contact-item">
                     <img src="images/link.png" alt="Ícone LinkedIn">
                     <h3>LinkedIn:</h3>
-                    <h4>https://br.linkedin.com/in/breno-ribeiro-almeida-0b6629162</h4>
+                    <a href="https://br.linkedin.com/in/breno-ribeiro-almeida-0b6629162" target="_blank">
+                        <h4>https://br.linkedin.com/in/breno-ribeiro-almeida-0b6629162</h4>
+                    </a>
                 </div>
-    
+                
+                <!-- GitHub -->
                 <div class="contact-item">
                     <img src="images/gth.png" alt="Ícone GitHub">
                     <h3>GitHub:</h3>
-                    <h4>https://github.com/brenorial/</h4>
+                    <a href="https://github.com/brenorial/" target="_blank">
+                        <h4>https://github.com/brenorial/</h4>
+                    </a>
+                </div>
+            
+                <!-- Gmail -->
+                <div class="contact-item">
+                    <img src="images/gmail.png" alt="Ícone Gmail">
+                    <h3>Gmail:</h3>
+                    <a href="mailto:breno.ribeiro.almeida@gmail.com">
+                        <h4>brenorialmeida@gmail.com</h4>
+                    </a>
                 </div>
             </div>
+            
         </div>
     </section>
     
