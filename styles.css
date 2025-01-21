@@ -125,21 +125,21 @@ header nav ul li a {
 }
 
 .about-me-image::after {
-    content: ''; /* Cria um pseudo-elemento para ajustar o tamanho e posição da sombra */
+    content: '';
     position: absolute;
     top: 0px;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.1); /* Cor e opacidade da sombra */
-    border-radius: 8px; /* Mesmo valor de bordas arredondadas */
+    background-color: rgba(0, 0, 0, 0.1); 
+    border-radius: 8px;
 }
 
 .about-me-image img {
-    display: none; /* Esconde qualquer imagem dentro de .about-me-image */
+    display: none; 
 }
 
-/* Estilos para a seção Skills */
+
 
 .skills {
     background-color: #001524;
@@ -155,6 +155,7 @@ header nav ul li a {
 .skills h2 {
     text-align: center;
     font-size: 2.5em;
+    margin-top: 20px;
     margin-bottom: 1em;
     color: #333;
 }
@@ -163,7 +164,9 @@ header nav ul li a {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2em;
-    margin-top: 2px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
 }
 
 .skill {
