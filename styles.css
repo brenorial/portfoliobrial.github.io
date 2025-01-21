@@ -37,7 +37,7 @@ header nav ul li a {
 
 .hero {
     height: 90vh; /* Altura igual à altura da tela */
-    background: url('img.png') no-repeat center center/cover;
+    background: url('images/img.png') no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -110,7 +110,7 @@ header nav ul li a {
     flex: 1;
     text-align: center;
     position: relative; /* Para controlar a posição do conteúdo sobre o fundo */
-    background-image: url('breno.jpg'); /* Caminho para a sua imagem */
+    background-image: url('images/breno.png'); /* Caminho para a sua imagem */
     background-size: 400px; /* Ajusta o tamanho da imagem para o tamanho original */
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Evita repetição da imagem de fundo */
