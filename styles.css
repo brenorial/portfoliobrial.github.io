@@ -322,11 +322,37 @@ header nav ul li a {
     margin-top: 1em;
 }
 
+#scrollToTopBtn {
+    display: none; 
+    position: fixed;
+    bottom: 60px;
+    right: 400px;
+    z-index: 99;
+    font-size: 18px;
+    background-color: #eeeeee;
+    color: rgb(83, 103, 129);
+    border: none;
+    outline: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #636363;
+    color: rgb(255, 255, 255);
+
+}
+
+
 .contact {
     background-color: #001524;
     padding: 4em 0;
-    color: #333; /* Alterei a cor do texto para branco para melhor contraste */
-    text-align: center; /* Centraliza o texto dentro do container */
+    color: #333; 
+    text-align: center; 
 }
 
 .contact .container {
@@ -336,13 +362,21 @@ header nav ul li a {
 
 .contact h2 {
     font-size: 2.5em;
-    margin-bottom: 2em;
+    margin-bottom: 0.5em;
     font-weight: bold;
     text-align: left;
-    writing-mode: vertical-lr; /* Define a escrita vertical da direita para a esquerda */
-    text-orientation: mixed; /* Define a orientação do texto para misturada */
-    margin-left: 20px; /* Ajusta o espaçamento à esquerda */
-    padding-top: 60px; /* Afastamento a partir do início */
+    writing-mode: vertical-lr; 
+    text-orientation: mixed; 
+    margin-left: 20px;
+    padding-top: 50px;
+}
+
+.contact-item img {
+    transition: transform 0.2s ease;
+}
+
+.contact-item img:hover {
+    transform: translateY(-10px); /* Faz o ícone "subir" */
 }
 
 .contact-info {
@@ -352,8 +386,8 @@ header nav ul li a {
 
 .contact-item {
     display: flex;
-    align-items: center; /* Alinha itens verticalmente no centro */
-    margin-bottom: 1.5em; /* Espaçamento entre os itens */
+    align-items: center; 
+    margin-bottom: 1.5em;
 }
 
 .contact-item img {
@@ -365,14 +399,14 @@ header nav ul li a {
 
 .contact h3 {
     font-size: 1.3em;
-    margin-bottom: 0em; /* Ajusta o espaçamento abaixo do título */
+    margin-bottom: 0em;
     margin-left: 0.4;
     margin-right: 10px;
 }
 
 .contact h4 {
     font-size: 1.2em;
-    margin-bottom: 0em; /* Ajusta o espaçamento abaixo do texto */
+    margin-bottom: 0em; 
     font-weight: 300;
     margin-left: 1.9;
 }
@@ -381,18 +415,19 @@ header nav ul li a {
     margin: 0;
     font-size: 1.2em;
     line-height: 1.6;
-    color: #333; /* Cor do texto dos itens de contato */
+    color: #333; 
 }
 
 .contact-item a {
-    color: #333;
     text-decoration: none;
+    color: inherit; 
     transition: color 0.3s ease;
 }
 
 .contact-item a:hover {
-    color: #333;
+    color: #0077b5;
 }
+
 
 
 footer {
