@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sobre Mim - Breno Almeida</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre_mim.html">Sobre Mim</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="certificados.html">Certificados</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="docs/curriculo.pdf" download>Currículo</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="certificados" class="certificates">
+      <div class="container">
+        <h2>Certificados</h2>
+
+        <div class="certificate">
+          <h3>
+            Especialização em
+            <h3>Desenvolvimento Full Stack</h3>
+          </h3>
+          <h4>Pontifícia Universidade Católica (PUC-RIO)</h4>
+          <img src="images/puc.png" alt="Certificado 1" />
+        </div>
+
+        <div class="certificate">
+          <h3>
+            MBA em Dados com ênfase em Big Data, Business Intelligence e
+            Inteligência Competitiva
+          </h3>
+          <h4>Universidade Veiga de Almeida</h4>
+          <img src="images/uva.png" alt="Certificado 1" />
+        </div>
+
+        <div class="certificate">
+          <h3>Certificação em Analista de Dados</h3>
+          <h4>IBM</h4>
+          <img src="images/dados.png" alt="Certificado dados" />
+        </div>
+
+        <div class="certificate">
+          <h3>Graduação Tecnológica - Defesa Cibernética</h3>
+          <h4>Universidade Estácio de Sá</h4>
+          <img src="images/est.png" alt="Certificado 2" />
+        </div>
+
+        <div class="certificate">
+          <h3>SQL - Do zero ao avançado</h3>
+          <h4>Udemy</h4>
+          <img src="images/sql.png" alt="Certificado sql" />
+        </div>
+
+        <div class="certificate">
+          <h3>Curso de Inglês</h3>
+          <h4>CLAC - UFRJ</h4>
+          <img src="images/clac.png" alt="Certificado clac" />
+        </div>
+
+        <div class="certificate">
+          <h3>Licenciatura em História</h3>
+          <h4>Universidade Federal do Estado do Rio de Janeiro - UNIRIO</h4>
+          <img src="images/unirio.png" alt="Certificado clac" />
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>&copy; 2025 Breno Almeida. Todos os direitos reservados.</p>
+    </footer>
+    <script src="scripts.js"></script>
+  </body>
+</html>
+<button id="scrollToTopBtn" title="Ir para o topo">⬆</button>
+<script>
+  const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+  window.onscroll = function () {
+    if (
+      document.body.scrollTop > 300 ||
+      document.documentElement.scrollTop > 300
+    ) {
+      scrollToTopBtn.style.display = "block";
+    } else {
+      scrollToTopBtn.style.display = "none";
+    }
+  };
+
+  scrollToTopBtn.onclick = function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+</script>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Breno Almeida</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre_mim.html">Sobre Mim</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="certificados.html">Certificados</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="docs/curriculo.pdf" download>Currículo</a></li>
+            </ul>
+        </nav>        
+    </header>
+    <main>
+  <body>
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-list">
+          <div class="skill">
+            <h3>Data Science</h3>
+            <p>
+              Experiência em análise de dados, modelagem estatística e machine
+              learning.
+            </p>
+          </div>
+          <div class="skill">
+            <h3>Programação</h3>
+            <p>Domínio em linguagens como Python, CSS, Java Script e HTML.</p>
+          </div>
+          <div class="skill">
+            <h3>Big Data</h3>
+            <p>
+              Conhecimento em ferramentas como Hadoop, Spark e bancos de dados
+              SQL.
+            </p>
+          </div>
+          <div class="skill">
+            <h3>Dados em Nuvem</h3>
+            <p>
+              Domínio de ferramentas Google como App Scripts, App Sheets e
+              Macros.
+            </p>
+          </div>
+          <div class="skill">
+            <h3>Criação Dashboards</h3>
+            <p>
+              Conhecimentos vastos em ferramentas como Power Bi, Tableau e
+              Looker Studio.
+            </p>
+          </div>
+          <div class="skill">
+            <h3>Full Stack</h3>
+            <p>
+              Desenvolvimento de aplicações, incluindo front-end, back-end e
+              banco de dados.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="proficiency" class="proficiency-section">
+        <div class="proficiency-container">
+          <h2>Minhas Ferramentas</h2>
+      
+          <div class="tool">
+            <div class="label">
+              <span>Power BI</span><span class="percent">90%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="fill" style="width: 90%;"></div>
+            </div>
+          </div>
+      
+          <div class="tool">
+            <div class="label">
+              <span>Python</span><span class="percent">80%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="fill" style="width: 80%;"></div>
+            </div>
+          </div>
+      
+          <div class="tool">
+            <div class="label">
+              <span>SQL</span><span class="percent">85%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="fill" style="width: 85%;"></div>
+            </div>
+          </div>
+      
+          <div class="tool">
+            <div class="label">
+              <span>Excel</span><span class="percent">95%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="fill" style="width: 95%;"></div>
+            </div>
+          </div>
+      
+        </div>
+      </section>
+    
+  </body>
+</html>
+
+
+<footer>
+    <p>&copy; 2025 Breno Almeida. Todos os direitos reservados.</p>
+</footer>
+<script src="scripts.js"></script>
+</body>
+</html>
+
+<script>
+    // Função para animar as barras de progresso
+    function animateProgressBar() {
+      const fills = document.querySelectorAll(".fill");
+      fills.forEach(fill => {
+        const targetWidth = fill.getAttribute("style").match(/width:\s*(\d+)%/)[1];
+        fill.style.width = "0%"; // Inicia com a largura 0%
+        
+        // Adiciona a animação após um pequeno delay
+        setTimeout(() => {
+          fill.style.transition = "width 1s ease-in-out"; // Adiciona a animação
+          fill.style.width = targetWidth + "%";
+        }, 100);
+      });
+    }
+  
+    // Reativa a animação quando o mouse passa sobre o container
+    const container = document.querySelector(".proficiency-container");
+    container.addEventListener("mouseenter", animateProgressBar);
+  
+    // A animação será resetada quando o mouse sair do container
+    container.addEventListener("mouseleave", () => {
+      const fills = container.querySelectorAll(".fill");
+      fills.forEach(fill => {
+        fill.style.transition = "none"; // Remove a transição
+        fill.style.width = "0%"; // Reseta a largura
+      });
+    });
+  </script>
+  
