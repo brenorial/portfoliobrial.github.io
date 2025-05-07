@@ -72,44 +72,92 @@
       </div>
     </section>
     <section id="proficiency" class="proficiency-section">
-        <div class="proficiency-container">
-          <h2>Minhas Ferramentas</h2>
-      
-          <div class="tool">
-            <div class="label">
-              <span>Power BI</span><span class="percent">90%</span>
-            </div>
-            <div class="progress-bar">
-              <div class="fill" style="width: 90%;"></div>
-            </div>
+      <div class="proficiency-container">
+        <h2>Minhas Ferramentas</h2>
+    
+        <div class="tool">
+          <div class="label">
+            <span>Power BI</span><span class="percent">90%</span>
           </div>
-      
-          <div class="tool">
-            <div class="label">
-              <span>Python</span><span class="percent">80%</span>
-            </div>
-            <div class="progress-bar">
-              <div class="fill" style="width: 80%;"></div>
-            </div>
+          <div class="progress-bar">
+            <div class="fill" style="width: 90%;"></div>
           </div>
-      
-          <div class="tool">
-            <div class="label">
-              <span>SQL</span><span class="percent">85%</span>
-            </div>
-            <div class="progress-bar">
-              <div class="fill" style="width: 85%;"></div>
-            </div>
+        </div>
+    
+        <div class="tool">
+          <div class="label">
+            <span>Python</span><span class="percent">80%</span>
           </div>
-      
-          <div class="tool">
-            <div class="label">
-              <span>Excel</span><span class="percent">95%</span>
-            </div>
-            <div class="progress-bar">
-              <div class="fill" style="width: 95%;"></div>
-            </div>
+          <div class="progress-bar">
+            <div class="fill" style="width: 80%;"></div>
           </div>
+        </div>
+    
+        <div class="tool">
+          <div class="label">
+            <span>SQL</span><span class="percent">85%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="fill" style="width: 85%;"></div>
+          </div>
+        </div>
+    
+        <div class="tool">
+          <div class="label">
+            <span>Excel</span><span class="percent">95%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="fill" style="width: 95%;"></div>
+          </div>
+        </div>
+    
+        <div class="tool">
+          <div class="label">
+            <span>PostgreSQL</span><span class="percent">90%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="fill" style="width: 90%;"></div>
+          </div>
+        </div>
+    
+        <div class="tool">
+          <div class="label">
+            <span>Looker Studio</span><span class="percent">95%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="fill" style="width: 95%;"></div>
+          </div>
+        </div>
+    
+        <div class="tool">
+          <div class="label">
+            <span>Desenvolvimento Web (HTML, CSS, JavaScript)</span><span class="percent">83%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="fill" style="width: 83%;"></div>
+          </div>
+        </div>
+    
+        <div class="tool">
+          <div class="label">
+            <span>Node.js</span><span class="percent">76%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="fill" style="width: 76%;"></div>
+          </div>
+        </div>
+    
+        <div class="tool">
+          <div class="label">
+            <span>Google Scripts</span><span class="percent">93%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="fill" style="width: 93%;"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
       
         </div>
       </section>
@@ -125,33 +173,31 @@
 </body>
 </html>
 
+<!-- HTML exemplo para cada barra -->
+<div class="proficiency-container">
+  <div class="progress-bar">
+    <div class="fill" data-target="80"></div>
+  </div>
+</div>
 <script>
-    // Função para animar as barras de progresso
-    function animateProgressBar() {
-      const fills = document.querySelectorAll(".fill");
-      fills.forEach(fill => {
-        const targetWidth = fill.getAttribute("style").match(/width:\s*(\d+)%/)[1];
-        fill.style.width = "0%"; // Inicia com a largura 0%
-        
-        // Adiciona a animação após um pequeno delay
-        setTimeout(() => {
-          fill.style.transition = "width 1s ease-in-out"; // Adiciona a animação
-          fill.style.width = targetWidth + "%";
-        }, 100);
-      });
-    }
-  
-    // Reativa a animação quando o mouse passa sobre o container
-    const container = document.querySelector(".proficiency-container");
-    container.addEventListener("mouseenter", animateProgressBar);
-  
-    // A animação será resetada quando o mouse sair do container
-    container.addEventListener("mouseleave", () => {
-      const fills = container.querySelectorAll(".fill");
-      fills.forEach(fill => {
-        fill.style.transition = "none"; // Remove a transição
-        fill.style.width = "0%"; // Reseta a largura
-      });
+  const container = document.querySelector(".proficiency-container");
+
+  container.addEventListener("mouseenter", () => {
+    const fills = container.querySelectorAll(".fill");
+    fills.forEach(fill => {
+      const target = fill.dataset.target;
+      fill.style.width = target + "%";
     });
-  </script>
-  
+  });
+
+  container.addEventListener("mouseleave", () => {
+    const fills = container.querySelectorAll(".fill");
+    fills.forEach(fill => {
+      fill.style.transition = "none";
+      fill.style.width = "0%";
+      // Força reflow para reativar a transição
+      void fill.offsetWidth;
+      fill.style.transition = "width 1.2s ease-in-out";
+    });
+  });
+</script>
