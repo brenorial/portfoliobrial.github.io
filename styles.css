@@ -1,0 +1,614 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", Arial, sans-serif;
+  background-color: #001524;
+  color: #0c0c0c;
+}
+
+header {
+  background-color: #000000;
+  color: white;
+  padding: 2em 0;
+  text-align: center;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul li {
+  margin: 0 1em;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.hero {
+  height: 90vh;
+  background: url("images/img.png") no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 2em;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
+.overlay h1 {
+  font-size: 3em;
+  margin-bottom: 0.3em;
+}
+
+.overlay h2 {
+  font-size: 1em;
+  font-weight: 300;
+}
+
+.container {
+  display: flex;
+  max-width: 960px;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  padding: 20em;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-me-text {
+  flex: 1;
+  margin-top: 1.5em;
+  text-align: justify;
+}
+
+.about-me-text h2 {
+  font-size: 2em;
+  margin-bottom: 1em;
+  text-align: justify;
+}
+
+.about-me-text h3 {
+  font-size: 2em;
+  margin-bottom: 0em;
+  font-weight: 100;
+  text-align: justify;
+}
+
+.about-me-text h4 {
+  font-size: 2em;
+  margin-bottom: 0em;
+  font-weight: 100;
+  text-align: justify;
+}
+
+.about-me-text p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 2em;
+  text-align: justify;
+}
+
+.about-me-image {
+  flex: 1;
+  text-align: center;
+  position: relative;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  top: 100px;
+  height: 400px;
+  width: 60%;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-left: 20px;
+  overflow: hidden;
+}
+
+.about-me-image::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.skills {
+  background-color: #001524;
+  padding: 4em 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1em;
+  margin-bottom: 50px;
+}
+
+.skills h2 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-top: 20px;
+  margin-bottom: 1em;
+  color: #333;
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2em;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.skill {
+  background-color: #fff;
+  padding: 1.5em;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skill h3 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+  color: #333;
+}
+
+.skill p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #666;
+}
+
+/* Estilos adicionais de hover para cada habilidade */
+.skill:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.projects {
+  background-color: #001524;
+  padding: 4em 0;
+  bottom: 0.5em;
+  text-align: center; /* Centraliza o conteúdo dos projetos */
+}
+
+.projects .container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1em;
+  display: grid;
+  grid-template-columns: 1fr; /* Define uma coluna */
+  gap: 2em;
+}
+
+.projects h2 {
+  font-size: 2.5em;
+  margin-bottom: 1em;
+  color: #333;
+  margin-top: 0.5em;
+  grid-column: 1 / -1;
+}
+
+.project {
+  background-color: #fff;
+  padding: 1.5em;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  position: relative;
+}
+
+.project-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project h3 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+  color: #333;
+}
+
+.project p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  text-align: justify;
+  margin-bottom: 1em;
+}
+
+.project-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 1em;
+}
+
+.project-content img {
+  max-width: 100%; /* Garante que a imagem não ultrapasse a largura do balão */
+  height: auto; /* Altura automática para manter a proporção */
+  border-radius: 8px; /* Borda arredondada */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  margin-top: 1em; /* Espaçamento superior */
+  display: block; /* Garante que a imagem seja exibida como um bloco */
+  margin-left: auto; /* Centraliza horizontalmente */
+  margin-right: auto; /* Centraliza horizontalmente */
+}
+.certificates {
+  background-color: #001524;
+  padding: 4em 0;
+  text-align: center;
+  color: #333;
+}
+
+.certificates .container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.certificates h2 {
+  font-size: 2.5em;
+  margin-bottom: 0.7em;
+  color: #333;
+  text-align: center;
+  border-radius: 10px;
+}
+.certificate {
+  background-color: #fff;
+  padding: 1.5em;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  margin-bottom: 2em;
+  max-width: 600px; /* Ajuste conforme necessário */
+}
+
+.certificate h3 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+  color: #333;
+  text-align: center;
+}
+
+.certificate h4 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+  color: #333;
+  font-weight: 300;
+  text-align: center;
+}
+.certificate img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 1em;
+}
+
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 60px;
+  right: 600px;
+  z-index: 10;
+  font-size: 18px;
+  background-color: #eeeeee;
+  color: #636363;
+  border: none;
+  outline: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #636363;
+  color: rgb(255, 255, 255);
+}
+
+.contact {
+  background-color: #001524;
+  padding: 4em 0;
+  color: #333;
+  text-align: center;
+}
+
+.contact .container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.contact h2 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+  text-align: left;
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+  margin-left: 20px;
+  padding-top: 50px;
+}
+
+.contact-item img {
+  transition: transform 0.2s ease;
+}
+
+.contact-item img:hover {
+  transform: translateY(-10px);
+}
+
+.contact-info {
+  margin-top: 2em;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5em;
+}
+
+.contact-item img {
+  width: 40px;
+  height: 40px;
+  margin-right: 1em;
+  margin-left: 1em;
+}
+
+.contact h3 {
+  font-size: 1.3em;
+  margin-bottom: 0em;
+  margin-left: 0.4;
+  margin-right: 10px;
+}
+
+.contact h4 {
+  font-size: 1.2em;
+  margin-bottom: 0em;
+  font-weight: 300;
+  margin-left: 1.9;
+}
+
+.contact-item p {
+  margin: 0;
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #333;
+}
+
+.contact-item a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+  color: #0077b5;
+}
+
+footer {
+  background-color: #000000;
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+  padding: 1em 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  margin: 20px auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.carousel-images {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 100%;
+}
+
+.carousel-images img {
+  width: 100%;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 50%; /* forma circular */
+  font-size: 1.5rem;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.about-me {
+  margin-top: 50px;
+}
+
+.proficiency-section {
+  padding: 60px 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.proficiency-container {
+  max-width: 700px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+}
+
+.proficiency-container h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #333;
+  font-size: 28px;
+}
+
+.tool {
+  margin-bottom: 25px;
+}
+
+.label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #444;
+}
+
+.progress-bar {
+  background-color: #e0e0e0;
+  border-radius: 30px;
+  overflow: hidden;
+  height: 20px;
+}
+
+.fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  border-radius: 30px;
+  transition: width 1.2s ease-in-out;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  border-radius: 15px;
+}
+
+nav li {
+  position: relative;
+  margin: 0 1em;
+  border-radius: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2em;
+  background-color: transparent;
+  transition: background-color 0.3s;
+  border-radius: 15px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #000000;
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.1);
+  z-index: 1000;
+  min-width: 160px;
+}
+
+.dropdown-content li {
+  margin: 0;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.dropdown-content a {
+  color: white;
+  border-radius: 15px;
+  padding: 10px 15px;
+  background-color: #000000;
+}
+
+.dropdown-content a:hover {
+  background-color: #333333;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+nav a:hover {
+  background-color: #333333;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2em;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  border-bottom-color: rgb(160, 160, 160);
+}

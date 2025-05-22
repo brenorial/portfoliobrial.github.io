@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sobre Mim - Breno Almeida</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre_mim.html">Sobre Mim</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li class="dropdown">
+            <a href="projetos.html">Projetos</a>
+            <ul class="dropdown-content">
+              <li><a href="projetos_front.html">Front-end</a></li>
+              <li><a href="projetos_back.html">Back-end</a></li>
+            </ul>
+          </li>
+          <li><a href="certificados.html">Certificados</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="docs/curriculo.pdf" download>Currículo</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="projetos" class="projects">
+      <div class="container">
+        <h2>Front-End</h2>
+
+        <div class="project">
+          <h3>Painel de Performance das Unidades</h3>
+          <div class="project-content">
+            <p>
+              Utilizando essa ferramenta, mapeamos de forma abrangente todos os
+              dados de aproximadamente vinte unidades de saúde que compõem a
+              RioSaúde. Nela, reunimos informações gerenciais cruciais, como
+              volume de atendimentos, classificações, óbitos e demais
+              indicadores que embasam decisões estratégicas e otimizam a gestão
+              da saúde.
+            </p>
+            <p>Ferramenta: Postgres e Power BI</p>
+
+            <div class="carousel">
+              <button class="prev">&#10094;</button>
+              <div class="carousel-images">
+                <img src="images/gr1.png" alt="Visão gerencial 1" />
+                <img src="images/gr2.png" alt="Visão gerencial 2" />
+                <img src="images/gr3.png" alt="Visão gerencial 3" />
+                <img src="images/gr4.png" alt="Visão gerencial 4" />
+                <img src="images/gr5.png" alt="Visão gerencial 5" />
+              </div>
+              <button class="next">&#10095;</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="project">
+          <h3>Dashboard de Controle Financeiro</h3>
+          <div class="project-content">
+            <p>
+              A Diretoria de Finanças da empresa necessitava de um dashboard
+              para controle do envio de notas fiscais e o processo até o
+              pagamento. Baseado no que eles chamam de "Planilhão", foi
+              desenvolvido o Dash abaixo. Obs.: Foram embaçados os dados
+              sensíveis.
+            </p>
+            <p>Ferramenta: Power Bi e Planilha Compartilhada</p>
+
+            <div class="carousel">
+              <button class="prev">&#10094;</button>
+              <div class="carousel-images">
+                <img src="images/daf_1.png" alt="Imagem daf_1" />
+                <img src="images/daf_vg.png" alt="Imagem daf_vg" />
+                <img src="images/daf_dyt.png" alt="Imagem daf_detalhamento" />
+                <img src="images/daf_rg.png" alt="Imagem daf_rg" />
+              </div>
+              <button class="next">&#10095;</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="project">
+          <h3>Produção Diária</h3>
+          <div class="project-content">
+            <p>
+              Este dashboard é atualizado a cada 30 minutos e oferece uma visão
+              abrangente dos atendimentos diários. Nele, é possível visualizar
+              os atendimentos por unidade, categorizados por nível de risco e
+              total de atendimentos. Além disso, conta com um mapa de calor que
+              detalha os atendimentos realizados por médico e por classificação,
+              permitindo uma análise rápida e eficiente do desempenho e da
+              distribuição dos atendimentos.
+            </p>
+            <p>Ferramenta: Postgres e Power Bi</p>
+            <img src="images/ProDi.jpg" alt="Produção Diária" />
+          </div>
+        </div>
+
+        <div class="project">
+          <h3>Dashboard de Controle de RH</h3>
+          <div class="project-content">
+            <p>
+              Realizado para a Diretoria de Recursos Humanos, este dashboard
+              apresenta informações detalhadas sobre o número de colaboradores,
+              sua distribuição por áreas, movimentações internas e indicadores
+              relevantes para a gestão de pessoas.
+            </p>
+            <p>Ferramenta: Power BI</p>
+
+            <div class="carousel">
+              <button class="prev">&#10094;</button>
+              <div class="carousel-images">
+                <img src="images/dgp1.png" alt="Dashboard de RH 1" />
+                <img src="images/dgp2.png" alt="Dashboard de RH 2" />
+                <img src="images/dgp3.png" alt="Dashboard de RH 3" />
+              </div>
+              <button class="next">&#10095;</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="project">
+          <h3>Tempo de Espera</h3>
+          <div class="project-content">
+            <p>
+              O Dashboard de Gestão de Tempo de Espera oferece uma visualização
+              em tempo real do tempo de espera nas unidades de saúde,
+              classificada por categorias de risco. Essa ferramenta permite que
+              pacientes vejam estimativas de espera ao entrar na unidade,
+              promovendo transparência e reduzindo a ansiedade. Além disso,
+              ajuda os gestores a alocarem recursos de forma eficiente e a
+              melhorarem o fluxo de atendimento.
+            </p>
+            <p>Ferramenta: Postgres e Power Bi</p>
+            <img src="images/Info TV.jpg" alt="TV" />
+          </div>
+        </div>
+
+        <div class="project">
+          <h3>Processos Vigentes</h3>
+          <div class="project-content">
+            <p>
+              Este dashboard é baseado em dados extraídos diretamente do Google
+              Sheets e apresenta uma visão clara dos processos vigentes da
+              empresa. Nele, você poderá acompanhar informações relevantes, como
+              o status atual de cada processo, prazos, responsáveis e outros
+              detalhes essenciais. Essa ferramenta facilita a gestão e o
+              monitoramento eficiente, permitindo uma análise mais rápida e
+              informada das atividades em andamento.
+            </p>
+            <p>Ferramenta: Google Sheets e Looker Studios</p>
+            <img src="images/ProVig.jpg" alt="Processos Vigentes" />
+          </div>
+        </div>
+
+        <div class="project">
+          <h3>Transcritor de Áudio</h3>
+          <div class="project-content">
+            <p>
+              Através desta aplicação, é possível transcrever o áudio de uma
+              gravação em tempo real.
+            </p>
+            <p>Ferramenta: Python, HTML, CSS e Docker</p>
+            <img src="images/transc_audio.png" alt="TransAudio" />
+          </div>
+        </div>
+
+        <div class="project">
+          <h3>Automação de Checklist</h3>
+          <div class="project-content">
+            <p>
+              A rotina diária de um técnico de TI inclui verificar o status de
+              alguns sites e seu correto funcionamento. Afim de tornar esse
+              hábito mais rápido e evitar erros, desenvolvi este aplicativo que
+              automaticamente entra nos sites que preciso, fecha a página e ao
+              final me retorna se está OK (no ar) ou offline. Obs.: Informações
+              borradas para manutenção do sigilo profissional.
+            </p>
+            <p>Ferramenta: Python</p>
+            <img src="images/vf.png" alt="Imagem do Projeto lk" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Breno Almeida. Todos os direitos reservados.</p>
+    </footer>
+    <script src="scripts.js"></script>
+  </body>
+</html>
+<button id="scrollToTopBtn" title="Ir para o topo">⬆</button>
+<script>
+  const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+  window.onscroll = function () {
+    if (
+      document.body.scrollTop > 300 ||
+      document.documentElement.scrollTop > 300
+    ) {
+      scrollToTopBtn.style.display = "block";
+    } else {
+      scrollToTopBtn.style.display = "none";
+    }
+  };
+
+  scrollToTopBtn.onclick = function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+</script>
