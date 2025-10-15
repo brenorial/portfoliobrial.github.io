@@ -179,25 +179,3 @@
     <div class="fill" data-target="80"></div>
   </div>
 </div>
-<script>
-  const container = document.querySelector(".proficiency-container");
-
-  container.addEventListener("mouseenter", () => {
-    const fills = container.querySelectorAll(".fill");
-    fills.forEach(fill => {
-      const target = fill.dataset.target;
-      fill.style.width = target + "%";
-    });
-  });
-
-  container.addEventListener("mouseleave", () => {
-    const fills = container.querySelectorAll(".fill");
-    fills.forEach(fill => {
-      fill.style.transition = "none";
-      fill.style.width = "0%";
-      // Força reflow para reativar a transição
-      void fill.offsetWidth;
-      fill.style.transition = "width 1.2s ease-in-out";
-    });
-  });
-</script>
