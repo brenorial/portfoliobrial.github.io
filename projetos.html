@@ -33,30 +33,56 @@
           <h3>Fast Track – Previsão de Demanda em Pronto Atendimento</h3>
           <div class="project-content">
             <p>
-              Construção de um Data Warehouse para previsões de demanda por horário, com consolidação de múltiplas fontes (atendimento, recursos humanos, histórico de pico), aplicação de modelos Prophet com limiares p92 e p97, e geração de alertas automáticos para dimensionamento de equipes.
+              Construção de um Data Warehouse preditivo para atendimento emergencial,
+              integrando múltiplas fontes (atendimento, ERGON/CNES, capacidade assistencial e
+              histórico de picos). Desenvolvimento de modelo híbrido de previsão 
+              (Prophet + histórico granular p92/p97) para estimar demanda por hora e gerar alertas
+              automáticos de saturação e dimensionamento de equipes.
             </p>
-            <p>Ferramentas: dbt, PostgreSQL, Python, Power BI, Docker, Figma</p>
+            <p>
+              Implantação em ambiente AWS (S3 + Athena), pipelines em Python com versionamento
+              via Docker e consultas diretas no Power BI, criando uma camada analítica de
+              uso operacional e assistencial.
+            </p>
+            <p>Ferramentas: AWS (S3, Athena), Docker, dbt, PostgreSQL, Python (Prophet), Power BI, Figma</p>
             <div class="carousel">
               <button class="prev">&#10094;</button>
               <div class="carousel-images">
                 <img src="images/ft_1.png" alt="Fast Track" />
                 <img src="images/ft_2.png" alt="Fast Track2" />
+                <img src="images/ft_aws.png" alt="Fast Track_Aws" />
+                <img src="images/ft_dw.png" alt="Fast Track_dw" />
+                <img src="images/ft_codigo.png" alt="Fast Track_codigo" />
               </div>
               <button class="next">&#10095;</button>
           </div>
         </div>
 
         <div class="project">
-          <h3>Dashboard de Controle CNES</h3>
+          <h3>Controle de Funcionários-CNES</h3>
           <div class="project-content">
             <p>
-              Dashboard que consolida informações do CNES (Cadastro Nacional de Estabelecimentos de Saúde) da rede RioSaúde, com validação de dados, alertas de inconsistência e visão por unidade para apoio a auditorias e gestão.
+              Desenvolvimento de uma plataforma de conciliação entre o quadro funcional
+              real (ERGON) e o CNES, com análise automática de vínculos, lotações e
+              compatibilização de profissionais por CBO, gerando recomendações de
+              ADICIONAR/REMOVER com vigência.
             </p>
-            <p>Ferramentas: Google Sheets, Looker Studio e Figma</p>
-            <img src="images/cnes1.png" alt="Dashboard CNES" />
+            <p>
+              Criação de modelo dimensional e pipeline Python com envio automático de
+              relatórios individualizados para cada unidade.
+            </p>
+            <p>Ferramentas: PostgreSQL, dbt, Python, Docker, Athena/S3, Power BI</p>
+        
+            <div class="carousel">
+              <button class="prev">&#10094;</button>
+              <div class="carousel-images">
+                <img src="images/cnes1.png" alt="Dashboard CNES" />
+                <img src="images/cnes_dw.png" alt="Modelo CNES" />
+              </div>
+              <button class="next">&#10095;</button>
+            </div>
           </div>
         </div>
-
 
         <div class="project">
           <h3>Painel de Performance das Unidades</h3>
